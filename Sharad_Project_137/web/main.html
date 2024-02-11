@@ -1,0 +1,351 @@
+<html>
+
+    <head>
+        <title>Main Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                scroll-behavior: smooth;
+            }
+
+            a {
+                list-style-type: none;
+                text-decoration: none;
+                color: #000;
+            }
+
+
+            nav {
+                width: 100%;
+                height: 100px;
+                background: aliceblue;
+                display: flex;
+                align-items: center;
+                position: fixed;
+            }
+
+            .check,
+            .enter {
+                position: relative;
+            }
+
+            li {
+                display: inline;
+                background: lightblue;
+                border-radius: 5px;
+                border: 2px solid black;
+                font-size: 22px;
+                margin: 10px;
+            }
+
+            .submenu_c,
+            .submenu_e {
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 10%;
+            }
+
+            form {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                font-size: 20px;
+                background: skyblue;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .open {
+                display: block;
+
+            }
+            input[type="submit"] {
+                background: lightgreen;
+            }
+            input[type="reset"] {
+                background: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <ul class="fixed">
+                <li><a href="main.html">Home</a></li>
+                <li class="check"><a href="#">Enter Marks</a>
+                    <ul class="submenu_c">
+                        <li><a href="#sem1">Sem 1</a></li>
+                        <li><a href="#sem2">Sem 2</a></li>
+                        <li><a href="#sem3">Sem 3</a></li>
+                        <li><a href="#sem4">Sem 4</a></li>
+                        <li><a href="#sem5">Sem 5</a></li>
+                        <li><a href="#sem6">Sem 6</a></li>
+                    </ul>
+                </li>
+                <li class="enter"><a href="checkMarks.html">Check Marks</a>
+
+                </li>
+            </ul>
+        </nav>
+        <div Id="sem1">
+            <form action="sem1.jsp" method="POST">
+                <h1> Sem 1</h1>
+                Enter the Student Roll No:<input type="text" pattern="[0-9]{2}" name="id" /><br /><br />
+                Enter the Student Class:<input type="text" name="class" /><br /><br />
+                
+                <table border="1">
+                    <tr>
+                        <th>Enter the Marks for Subject 1:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject1" /></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 2:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject2"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 3:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject3"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 4:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject4"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 5:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject5"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Clear">
+
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div Id="sem2">
+            <form action="sem2.jsp" method="POST">
+                <h1> Sem 2</h1>
+                Enter the Student Roll No:<input type="text" pattern="[0-9]{2}" name="id" /><br /><br />
+                Enter the Student Class:<input type="text" name="class" /><br /><br />
+                
+                <table border="1">
+                    <tr>
+                        <th>Enter the Marks for Subject 1:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject1" /></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 2:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject2"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 3:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject3"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 4:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject4"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 5:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject5"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Clear">
+
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div Id="sem3">
+            <form action="sem3.jsp" method="POST">
+                <h1> Sem 3</h1>
+                Enter the Student Roll No:<input type="text" pattern="[0-9]{2}" name="id" /><br /><br />
+                Enter the Student Class:<input type="text" name="class" /><br /><br />
+                
+                <table border="1">
+                    <tr>
+                        <th>Enter the Marks for Subject 1:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject1" /></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 2:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject2"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 3:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject3"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 4:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject4"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 5:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject5"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Clear">
+
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div Id="sem4">
+            <form action="sem4.jsp" method="POST">
+                <h1> Sem 4</h1>
+                Enter the Student Roll No:<input type="text" pattern="[0-9]{2}" name="id" /><br /><br />
+                Enter the Student Class:<input type="text" name="class" /><br /><br />
+                <table border="1">
+                    <tr>
+                        <th>Enter the Marks for Subject 1:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject1" /></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 2:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject2"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 3:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject3"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 4:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject4"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 5:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject5"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Clear">
+
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div Id="sem5">
+            <form action="sem5.jsp" method="POST">
+                <h1> Sem 5</h1>
+                Enter the Student Roll No:<input type="text" pattern="[0-9]{2}" name="id" /><br /><br />
+                Enter the Student Class:<input type="text" name="class" /><br /><br />
+                <table border="1">
+                    <tr>
+                        <th>Enter the Marks for Subject 1:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject1" /></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 2:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject2"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 3:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject3"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 4:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject4"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 5:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject5"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Clear">
+
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div Id="sem6">
+            <form action="sem6.jsp" method="POST">
+                <h1> Sem 6</h1>
+                Enter the Student Roll No:<input type="text" pattern="[0-9]{2}" name="id" /><br /><br />
+                Enter the Student Class:<input type="text" name="class" /><br /><br />
+                <table border="1">
+                    <tr>
+                        <th>Enter the Marks for Subject 1:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject1" /></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 2:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject2"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 3:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject3"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 4:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject4"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter the Marks for Subject 5:</th>
+                        <td><input type="text" pattern="[0-9]{2}" name="subject5"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Clear">
+
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+
+        <script>
+            const submenu_c = document.querySelector(".submenu_c");
+            const submenu_e = document.querySelector(".submenu_e");
+            const check = document.querySelector(".check");
+            const enter = document.querySelector(".enter");
+
+            check.addEventListener("click", () => {
+                if (submenu_c.classList.contains("open")) {
+                    submenu_c.classList.remove("open");
+                } else {
+                    submenu_c.classList.add("open");
+                }
+
+
+            })
+
+            enter.addEventListener("click", () => {
+                if (submenu_e.classList.contains("open")) {
+                    submenu_e.classList.remove("open");
+                } else {
+                    submenu_e.classList.add("open");
+                }
+
+
+            })
+        </script>
+    </body>
+
+</html>
